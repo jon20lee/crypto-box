@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace CryptoBox.Core.Services
 {
-    public class CryptoQuotesService : ICryptoQuotesService
+    public class CryptoCoinMarketCapService : ICryptoCoinMarketCapService
     {
         private readonly ICryptoQuotesRepository _cryptoQuotesRepository;
 
-        public CryptoQuotesService(ICryptoQuotesRepository cryptoQuotesRepository)
+        public CryptoCoinMarketCapService(ICryptoQuotesRepository cryptoQuotesRepository)
         {
             _cryptoQuotesRepository = cryptoQuotesRepository; 
         }

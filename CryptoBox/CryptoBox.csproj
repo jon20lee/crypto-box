@@ -194,6 +194,7 @@
     <Compile Include="Config\WindsorDependencyResolver.cs" />
     <Compile Include="Config\WindsorDependencyScope.cs" />
     <Compile Include="Controllers\CoinMarketCapController.cs" />
+    <Compile Include="Controllers\CryptoCompareController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">

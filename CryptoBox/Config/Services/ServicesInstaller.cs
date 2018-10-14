@@ -21,8 +21,14 @@ namespace CryptoBox.Config.ServicesConfig
                                   .LifestylePerWebRequest());
 
                  container.Register(
-                     Component.For<ICryptoQuotesService>().ImplementedBy<CryptoQuotesService>()
+                     Component.For<ICryptoCoinMarketCapService>().ImplementedBy<CryptoCoinMarketCapService>()
                  );
+
+                container.Register(
+                    Component.For<ICryptoCompareService>().ImplementedBy<CryptoCompareService>()
+                );
+
+            
         }
     }
 }

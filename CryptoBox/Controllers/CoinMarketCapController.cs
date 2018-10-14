@@ -12,10 +12,10 @@ namespace CryptoBox.Controllers
     [RoutePrefix("api/v1/coinmarketcap")]
     public class CoinMarketCapController : ApiController
     {
-        private readonly ICryptoQuotesService _cryptoQuotesService;
-        public CoinMarketCapController(ICryptoQuotesService cryptoQuotesService)
+        private readonly ICryptoCoinMarketCapService _cryptoCoinMarketCapService;
+        public CoinMarketCapController(ICryptoCoinMarketCapService cryptoCoinMarketCapService)
         {
-            _cryptoQuotesService = cryptoQuotesService;
+            _cryptoCoinMarketCapService = cryptoCoinMarketCapService;
         }
 
         /// <summary>
@@ -26,8 +26,7 @@ namespace CryptoBox.Controllers
         [Route("quotes/{coinName}")]
         public async Task<IHttpActionResult> GetQuotesAsync(string coinName)
         {
-            var result = await _cryptoQuotesService.GetQuoteAsync(coinName);
-
+            var result = await _cryptoCoinMarketCapService.GetQuoteAsync(coinName);
             if (result == null) { return BadRequest("No quote data found for the given coin name"); }
 
             return Ok(result);
@@ -40,7 +39,7 @@ namespace CryptoBox.Controllers
         [Route("coins")]
         public async Task<IHttpActionResult> GetAllCoinsMeta(string coinName)
         {
-            var allCoins = await _cryptoQuotesService.GetCryptoCoinsMap();
+            var allCoins = await _cryptoCoinMarketCapService.GetCryptoCoinsMap();
 
             if (allCoins == null) { return BadRequest("No coin data found"); }
 

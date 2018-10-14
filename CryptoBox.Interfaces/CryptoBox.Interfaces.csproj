@@ -40,10 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\Repositories\ICryptoCompareRepository.cs" />
     <Compile Include="Interfaces\Repositories\ICryptoQuotesRepository.cs" />
-    <Compile Include="Interfaces\Services\ICryptoQuotesService.cs" />
+    <Compile Include="Interfaces\Services\ICryptoCompareService.cs" />
+    <Compile Include="Interfaces\Services\ICryptoCoinMarketCapService.cs" />
     <Compile Include="Models\CoinMarketCap_Coin.cs" />
     <Compile Include="Models\CoinMarketCap_Quote.cs" />
+    <Compile Include="Models\CryptoCompare_HistoHour.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

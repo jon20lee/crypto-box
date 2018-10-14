@@ -52,8 +52,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CryptoCompareRepository.cs" />
     <Compile Include="Repositories\CryptoQuotesRepository.cs" />
-    <Compile Include="Services\CryptoQuotesService.cs" />
+    <Compile Include="Services\CryptoCompareService.cs" />
+    <Compile Include="Services\CryptoCoinMarketCapService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CryptoBox.Interfaces\CryptoBox.Interfaces.csproj">

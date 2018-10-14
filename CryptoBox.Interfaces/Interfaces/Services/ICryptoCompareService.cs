@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace CryptoBox.Interfaces.Interfaces.Services
 {
-    public interface ICryptoQuotesService
+    public interface ICryptoCompareService
     {
-        Task<CoinMarketCap_Quote> GetQuoteAsync(string coinName);
-        Task<IEnumerable<CoinMarketCap_Coin>> GetCryptoCoinsMap();
+        Task<IEnumerable<CryptoCompare_HistoHour>> GetHistoHour(string coinName);
     }
 }
