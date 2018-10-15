@@ -44,6 +44,7 @@
     <Compile Include="Interfaces\Repositories\ICryptoQuotesRepository.cs" />
     <Compile Include="Interfaces\Services\ICryptoCompareService.cs" />
     <Compile Include="Interfaces\Services\ICryptoCoinMarketCapService.cs" />
+    <Compile Include="Interfaces\Services\IStatisticsService.cs" />
     <Compile Include="Models\CoinMarketCap_Coin.cs" />
     <Compile Include="Models\CoinMarketCap_Quote.cs" />
     <Compile Include="Models\CryptoCompare_HistoHour.cs" />

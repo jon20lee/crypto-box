@@ -28,6 +28,11 @@ namespace CryptoBox.Config.ServicesConfig
                     Component.For<ICryptoCompareService>().ImplementedBy<CryptoCompareService>()
                 );
 
+                container.Register(
+                    Component.For<IStatisticsService>().ImplementedBy<StatisticsService>()
+                );
+
+
             
         }
     }

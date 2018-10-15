@@ -56,6 +56,7 @@
     <Compile Include="Repositories\CryptoQuotesRepository.cs" />
     <Compile Include="Services\CryptoCompareService.cs" />
     <Compile Include="Services\CryptoCoinMarketCapService.cs" />
+    <Compile Include="Services\StatisticsService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CryptoBox.Interfaces\CryptoBox.Interfaces.csproj">
