@@ -23,6 +23,11 @@ namespace CryptoBox.Config.RepositoriesConfig
             container.Register(
                 Component.For<ICryptoQuotesRepository>().ImplementedBy<CryptoQuotesRepository>()
             );
+
+            container.Register(
+                Component.For<ICryptoCompareRepository>().ImplementedBy<CryptoCompareRepository>()
+            );
+            
         }
     }
 }

@@ -193,9 +193,10 @@
     <Compile Include="Config\Services\ServicesInstaller.cs" />
     <Compile Include="Config\WindsorDependencyResolver.cs" />
     <Compile Include="Config\WindsorDependencyScope.cs" />
-    <Compile Include="Controllers\CoinMarketCapController.cs" />
+    <Compile Include="Controllers\Api\CoinMarketCapController.cs" />
+    <Compile Include="Controllers\Api\CryptoCompareController.cs" />
+    <Compile Include="Controllers\Api\StatisticsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
